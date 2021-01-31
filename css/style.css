@@ -1,1 +1,96 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap");
+/* font */
+ul, ol {
+  list-style-type: none;
+}
+
+input {
+  border: 1px solid #e6eaee;
+  height: 33px;
+  padding-left: 10px;
+  border-radius: 5px;
+  outline: none;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+body {
+  background-color: #eff3f6;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+}
+
+/* Extra small devices (portrait phones, less than 576px)
+No media query for `xs` since this is the default in Bootstrap
+Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  header {
+    height: 59px;
+    background-color: #fff;
+    border-bottom: 1px solid #e6eaee;
+    margin-bottom: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  header .header-left, header .header-right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header .header-left .logo {
+    width: 44px;
+    height: 44px;
+    margin-left: 20px;
+  }
+  header .header-left .main-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  header .header-left .main-menu-item {
+    margin-left: 30px;
+  }
+  header .header-left .main-menu-link {
+    text-decoration: none;
+    color: #9fa9ba;
+    font-size: .8rem;
+  }
+  header .header-right form {
+    margin: 0 10px;
+  }
+  header .header-right form input[type=search] {
+    border-right: none;
+    border-radius: 5px 0 0 5px;
+  }
+  header .header-right form button {
+    border: 1px solid #e6eaee;
+    border-left: none;
+    height: 33px;
+    background-color: #fff;
+    border-radius: 0 5px 5px 0;
+    margin-left: -4px;
+    color: #9fa9ba;
+    outline: none;
+  }
+  header .header-right form button span {
+    padding-right: 5px;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+/* Large devices (desktops, 992px and up) */
+/* Extra large devices (large desktops, 1200px and up) */
+/*# sourceMappingURL=style.css.map */

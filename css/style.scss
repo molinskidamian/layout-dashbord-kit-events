@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+
+$colorPageBg: #eff3f6;
+$borderColor: #e6eaee;
+
+/* font */
+$fontColor: #9fa9ba;
+$fontColorHeader: #354052;
+
+ul,ol {
+  list-style-type: none;
+}
+
+input {
+  border: 1px solid $borderColor;
+  height: 33px;
+  padding-left: 10px;
+  border-radius: 5px;
+  outline: none;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+body {
+ background-color: $colorPageBg;
+ font-family: 'Montserrat', sans-serif;
+ font-size: 16px;
+}
+
+@media (max-width: 319px){}
+
+@media (min-width: 320px) {}
+
+/* Extra small devices (portrait phones, less than 576px)
+No media query for `xs` since this is the default in Bootstrap
+Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  header {
+    height: 59px;
+    background-color: #fff;
+    border-bottom: 1px solid $borderColor;
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    .header-left, .header-right {
+      display: flex;
+      align-items: center;
+    }
+
+    .header-left {
+      .logo {
+        width: 44px;
+        height: 44px;
+        margin-left: 20px;
+      }
+  
+      .main-menu {
+        display: flex;
+      }
+  
+      .main-menu-item {
+        margin-left: 30px;
+      }
+  
+      .main-menu-link {
+        text-decoration: none;
+        color: $fontColor;
+        font-size: .8rem;
+      }
+    }
+
+    .header-right {
+      // outline: 1px dashed red;
+      form {
+        margin: 0 10px;
+        input[type=search] {
+          border-right: none;
+          border-radius: 5px 0 0 5px;
+        }
+        button {
+          border: 1px solid $borderColor;
+          border-left: none;
+          height: 33px;
+          background-color: #fff;
+          border-radius: 0 5px 5px 0;
+          margin-left: -4px;
+          color: $fontColor;
+          outline: none;
+          span {
+            padding-right: 5px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {}
