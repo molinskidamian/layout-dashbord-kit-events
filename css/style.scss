@@ -11,6 +11,11 @@ ul,ol {
   list-style-type: none;
 }
 
+h3 {
+  color: $fontColor;
+  font-size: .7rem;
+  text-transform: uppercase;}
+
 input {
   border: 1px solid $borderColor;
   height: 33px;
@@ -98,6 +103,61 @@ Small devices (landscape phones, 576px and up) */
         }
       }
     }
+  }
+
+  .wrapper{
+    // outline: 1px solid red;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+  }
+
+  .wrapper-inner {
+
+    .menu {
+      grid-area: menu;
+      
+      h3:nth-of-type(2){
+        margin-top: 40px;
+      }
+
+      ul {
+        li {
+          a:link, a:visited {
+            text-decoration: none;
+            color: $fontColorHeader;
+            font-weight: 700;
+            line-height: 2rem;
+            font-size: .8rem;
+            padding: 8px 20px;
+          }
+          a:hover {
+            color: #fff;
+            background-color: #289df4;
+            border-radius: 4px;
+          }
+          i {
+            padding-right: 6px;
+          }
+        }
+      }
+      ul:nth-child(1){
+        margin: 20px;
+      }
+    }
+
+    .content {
+      grid-area: contant;
+      outline: 1px dashed red;
+    }
+    
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+      "menu menu menu . content content content content content content content content";
+    justify-items: center;
   }
 }
 
