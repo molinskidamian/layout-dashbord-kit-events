@@ -11,22 +11,64 @@
 </head>
 <body>
   <header>
-    <img src="./assets/images/logo.png" alt="Logo" class="logo">
-    <ul class="header__navbar">
-      <li class="header__item"><a href="#" class="header__link">Events</a></li>
-      <li class="header__item"><a href="#" class="header__link">Browse</a></li>
-      <li class="header__item"><a href="#" class="header__link">Your Tickets</a></li>
+    <div class="header-left">
+      <img src="./assets/images/logo.png" alt="Logo" class="logo">
+      <ul class="header__navbar">
+        <li class="header__item"><a href="#" class="header__link">Events<span class="fas fa-sort-down"></span></a>
+          <ul class="header__submenu">
+            <li class="header__submenu__item"><a href="#" class="header__submenu__link">Show all events</a></li>
+            <li class="header__submenu__item"><a href="#" class="header__submenu__link">Incomeing events</a></li>
+            <li class="header__submenu__item"><a href="#" class="header__submenu__link">Events in the area</a></li>
+          </ul>
+        </li>
+        <li class="header__item"><a href="#" class="header__link">Browse</a></li>
+        <li class="header__item"><a href="#" class="header__link">Your Tickets</a></li>
+      </ul>
+    </div>
+    <div class="header-right">
+      <form action="" class="header__search">
+        <input type="search" placeholder="Search" class="header__input">
+        <button class="header__submit" type="submit"><span class="fas fa-search"></span></button>
+      </form>
+    </div>
+    <ul class="user-nav">
+      <li class="user-nav__item"><a href="" class="user-nav__link"></a>
+        <ul class="user-nav__submenu">
+          <li class="user-nav__submenu__item"><a href="" class="user-nav__submenu__link">Messages</a></li>
+          <li class="user-nav__submenu__item"><a href="" class="user-nav__submenu__link">My Profile</a></li>
+          <li class="user-nav__submenu__item"><a href="" class="user-nav__submenu__link">Settings</a></li>
+          <li class="user-nav__submenu__item"><a href="" class="user-nav__submenu__link">Logout</a></li>
+        </ul>
+      </li>
     </ul>
-    <form action="" class="header__search">
-      <input type="search" placeholder="Search" class="header__input">
-      <button class="header__submit" type="submit"><span class="fas fa-search"></span></button>
-    </form>
   </header>
-  <nav class="main-nav">
-    sada
-  </nav>
-  <main>
-    asas
-  </main>
+  <div class="wrapper">
+    <div class="navs">
+      <nav class="main-nav">
+        <h3>Menu</h3>
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#" class="nav-link">Featured Events</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Recommended</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Live Streams</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">DVD & Plays</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Tutorials</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Settings</a></li>
+        </ul>
+      </nav>
+      <nav class="main-nav">
+        <h3>Your Events</h3>
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#" class="nav-link">Classes</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">People</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Networking</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Hi-Skill</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Going To Buy</a></li>
+        </ul>
+      </nav>
+    </div>
+    <main>
+      asas
+    </main>
+  </div>
 </body>
 </html>
