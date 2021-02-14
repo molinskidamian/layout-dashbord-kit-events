@@ -106,11 +106,15 @@ Small devices (landscape phones, 576px and up) */
   .header__search input[type=search], .header__search button {
     border: 1px solid #a0a7b0;
     height: 2rem;
+    outline: none;
   }
   .header__search input[type=search] {
     padding: 0 10px;
     border-radius: 5px 0 0 5px;
     border-right: none;
+  }
+  .header__search input[type=search]:active {
+    outline: none;
   }
   .header__search button {
     border-radius: 0 5px 5px 0;
