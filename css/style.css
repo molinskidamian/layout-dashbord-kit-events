@@ -12,11 +12,14 @@ ul, ol {
 No media query for `xs` since this is the default in Bootstrap
 Small devices (landscape phones, 576px and up) */
 /* Medium devices (tablets, 768px and up) */
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   body {
-    width: 1200px;
     margin: 0 auto;
+  }
+  .avatar {
+    height: 36px;
+    width: 36px;
+    border-radius: 50%;
   }
   header {
     display: -webkit-box;
@@ -28,6 +31,7 @@ Small devices (landscape phones, 576px and up) */
     background-color: #fff;
     height: 70px;
     padding: 0 20px;
+    border-bottom: 1px solid #e6eaee;
   }
   .header-left {
     display: -webkit-box;
@@ -44,7 +48,6 @@ Small devices (landscape phones, 576px and up) */
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    outline: 1px dashed red;
   }
   .header__navbar {
     list-style: none;
@@ -55,7 +58,10 @@ Small devices (landscape phones, 576px and up) */
   .header__link span {
     margin-left: 10px;
   }
-  .header__link, .header__submenu__link {
+  .header__link,
+  .header__submenu__link,
+  .user-nav__link,
+  .user-nav__submenu__link {
     text-decoration: none;
     padding: 0 10px;
     color: #9fa9ba;
@@ -69,20 +75,75 @@ Small devices (landscape phones, 576px and up) */
   .header__item:first-child:hover > .header__submenu {
     display: block;
   }
-  .header__submenu__item {
+  .header__submenu__item,
+  .user-nav__submenu__item {
     height: 30px;
     background-color: #fff;
     z-index: 100;
     line-height: 30px;
   }
-  .header__submenu__item:first-child {
+  .header__submenu__item:first-child,
+  .user-nav__submenu__item:first-child {
     margin-top: 20px;
   }
-  .header__submenu__item:hover {
+  .header__submenu__item:hover,
+  .user-nav__submenu__item:hover {
     background-color: #343c49;
+  }
+  .header__submenu__link:hover,
+  .user-nav__submenu__link:hover {
+    display: block;
     color: #fff;
+  }
+  .header__search {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .header__search input[type=search], .header__search button {
+    border: 1px solid #a0a7b0;
+    height: 2rem;
+  }
+  .header__search input[type=search] {
+    padding: 0 10px;
+    border-radius: 5px 0 0 5px;
+    border-right: none;
+  }
+  .header__search button {
+    border-radius: 0 5px 5px 0;
+    border-left: none;
+    background-color: #fff;
+  }
+  .user-nav__item {
+    position: relative;
+  }
+  .user-nav__link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .user-nav__link span {
+    margin-left: 5px;
+  }
+  .user-nav__submenu {
+    display: none;
+    position: absolute;
+    margin-left: -30px;
+  }
+  .user-nav__item:hover > .user-nav__submenu {
+    display: block;
+  }
+  .wrapper {
+    background-color: #eff3f6;
   }
 }
 
+/* Large devices (desktops, 992px and up) */
 /* Extra large devices (large desktops, 1200px and up) */
 /*# sourceMappingURL=style.css.map */
