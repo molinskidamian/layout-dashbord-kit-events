@@ -2,6 +2,7 @@
 /* font */
 body {
   font-family: 'Montserrat', sans-serif;
+  background-color: #eff3f6;
 }
 
 ul, ol {
@@ -32,6 +33,7 @@ Small devices (landscape phones, 576px and up) */
     height: 70px;
     padding: 0 20px;
     border-bottom: 1px solid #e6eaee;
+    margin-bottom: 2rem;
   }
   .header-left {
     display: -webkit-box;
@@ -56,7 +58,7 @@ Small devices (landscape phones, 576px and up) */
     display: flex;
   }
   .header__link span {
-    margin-left: 10px;
+    margin-left: 5px;
   }
   .header__link,
   .header__submenu__link,
@@ -67,6 +69,11 @@ Small devices (landscape phones, 576px and up) */
     color: #9fa9ba;
     font-weight: 500;
     font-size: .9rem;
+    display: block;
+  }
+  .header__link:hover {
+    color: #334054;
+    font-weight: 600;
   }
   .header__submenu {
     display: none;
@@ -135,6 +142,10 @@ Small devices (landscape phones, 576px and up) */
   .user-nav__link span {
     margin-left: 5px;
   }
+  .user-nav__link:hover {
+    color: #334054;
+    font-weight: 600;
+  }
   .user-nav__submenu {
     display: none;
     position: absolute;
@@ -145,6 +156,61 @@ Small devices (landscape phones, 576px and up) */
   }
   .wrapper {
     background-color: #eff3f6;
+    width: 1200px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .wrapper main {
+    outline: 1px dashed orange;
+    width: 100%;
+  }
+  .wrapper .navs h3 {
+    color: #9da9bc;
+    font-size: .7rem;
+    text-transform: uppercase;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+  }
+  .wrapper .navs > nav {
+    margin-top: 50px;
+  }
+  .wrapper .navs > nav:nth-child(1) {
+    margin-top: 0px;
+  }
+  .wrapper .nav-page__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 200px;
+    height: 30px;
+    padding-left: 20px;
+  }
+  .wrapper .nav-page__link {
+    color: #334054;
+    font-size: .8rem;
+    font-weight: 600;
+    text-decoration: none;
+    display: block;
+    width: 200px;
+    height: 100%;
+    line-height: 30px;
+    margin-left: -20px;
+    padding-left: 20px;
+  }
+  .wrapper .nav-page__link span {
+    margin-right: 5px;
+  }
+  .wrapper .nav-page__item:hover {
+    background-color: #00a1fe;
+    border-radius: 5px;
+  }
+  .wrapper .nav-page__link:hover {
+    color: #fff;
   }
 }
 

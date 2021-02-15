@@ -7,10 +7,13 @@ $borderColor: #e6eaee;
 $fontColor: #9fa9ba;
 $fontColorHeader: #354052;
 $fontColorMenuLink: #3b475b;
+$fontColorMenuHover: #334054;
 
 
 body {
   font-family: 'Montserrat', sans-serif;
+  background-color: $colorPageBg;
+
 }
 
 ul,ol {
@@ -47,6 +50,7 @@ Small devices (landscape phones, 576px and up) */
     height: 70px;
     padding: 0 20px;
     border-bottom: 1px solid $borderColor;
+    margin-bottom: 2rem;
   }
 
     .header-left {
@@ -67,7 +71,7 @@ Small devices (landscape phones, 576px and up) */
 
   .header__link {
     span {
-      margin-left: 10px;
+      margin-left: 5px;
     }
   }
 
@@ -80,6 +84,12 @@ Small devices (landscape phones, 576px and up) */
     color: $fontColor;
     font-weight: 500;
     font-size: .9rem;
+    display: block;
+  }
+
+  .header__link:hover {
+    color: #334054;
+    font-weight: 600;
   }
 
   
@@ -142,10 +152,6 @@ Small devices (landscape phones, 576px and up) */
     }
   }
 
-  .user-nav {
-
-  }
-
   .user-nav__item {
     position: relative;
   }
@@ -158,15 +164,15 @@ Small devices (landscape phones, 576px and up) */
     }
   }
 
+  .user-nav__link:hover {
+    color: #334054;
+    font-weight: 600;
+  }
+
   .user-nav__submenu {
     display: none;
     position: absolute;
     margin-left: -30px;
-  }
-
-  .user-nav__submenu__item {
-    // outline: 1px solid red;
-    // display: block;
   }
 
   .user-nav__item:hover > .user-nav__submenu {
@@ -176,6 +182,69 @@ Small devices (landscape phones, 576px and up) */
   .wrapper {
     // outline: 1px dashed red;
     background-color: $colorPageBg;
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+
+    .navs {
+      // outline: 1px dashed red;
+    }
+
+    main {
+      outline: 1px dashed orange;
+      width: 100%;
+    }
+
+    .navs h3 {
+      color: #9da9bc;
+      font-size: .7rem;
+      text-transform: uppercase;
+      padding-left: 1rem;
+      padding-bottom: 1rem;
+    }
+
+    .navs > nav {
+      margin-top: 50px;
+    }
+
+    .navs > nav:nth-child(1) {
+      margin-top: 0px;
+    }
+
+      .nav-page__item {
+        display: flex;
+        align-items: center;
+        width: 200px;
+        height: 30px;
+        padding-left: 20px;
+      }
+      .nav-page__link {
+        color: $fontColorMenuHover;
+        font-size: .8rem;
+        font-weight: 600;
+        text-decoration: none;
+        display: block;
+        width: 200px;
+        height: 100%;
+        line-height: 30px;
+        margin-left: -20px;
+        padding-left: 20px;
+        // outline: 1px dashed red;
+      }
+
+      .nav-page__link {
+        span {
+          margin-right: 5px;
+        }
+      }
+
+      .nav-page__item:hover {
+        background-color: #00a1fe;
+        border-radius: 5px;
+      }
+      .nav-page__link:hover {
+        color: #fff;
+      }
   }
 
 }
