@@ -9,6 +9,13 @@ ul, ol {
   list-style-type: none;
 }
 
+input, select {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ced0db;
+  background-color: #eff3f6;
+}
+
 /* Extra small devices (portrait phones, less than 576px)
 No media query for `xs` since this is the default in Bootstrap
 Small devices (landscape phones, 576px and up) */
@@ -119,6 +126,7 @@ Small devices (landscape phones, 576px and up) */
     padding: 0 10px;
     border-radius: 5px 0 0 5px;
     border-right: none;
+    background-color: #fff;
   }
   .header__search input[type=search]:active {
     outline: none;
@@ -163,7 +171,6 @@ Small devices (landscape phones, 576px and up) */
     display: flex;
   }
   .wrapper main {
-    outline: 1px dashed orange;
     width: 100%;
   }
   .wrapper .navs h3 {
@@ -211,6 +218,60 @@ Small devices (landscape phones, 576px and up) */
   }
   .wrapper .nav-page__link:hover {
     color: #fff;
+  }
+  .wrapper main header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #eff3f6;
+  }
+  .wrapper main header h3 {
+    font-weight: 400;
+    font-size: 1.3rem;
+  }
+  .wrapper main .fetured-events__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background-color: #eff3f6;
+  }
+  .wrapper main .fetured-events__item {
+    background-color: #fff;
+    width: 50%;
+    border-radius: 20px;
+    border: 1px solid #e6eaee;
+  }
+  .wrapper main .fetured-events__item h3 {
+    color: #334054;
+    padding-left: 20px;
+  }
+  .wrapper main .fetured-events__item .description {
+    color: #8193a9;
+    padding-top: 6px;
+    padding-left: 20px;
+    font-size: .85rem;
+    padding-bottom: 8px;
+  }
+  .wrapper main .fetured-events__item:nth-child(1) {
+    margin-right: 4px;
+  }
+  .wrapper main .fetured-events__item:nth-child(2) {
+    margin-left: 4px;
+  }
+  .wrapper main .fetured-events__image {
+    width: 100%;
+    width: calc(100% - 16px);
+    padding: 8px;
+    border-radius: 20px;
   }
 }
 
