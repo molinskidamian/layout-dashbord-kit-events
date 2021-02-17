@@ -230,6 +230,8 @@ Small devices (landscape phones, 576px and up) */
         -ms-flex-align: center;
             align-items: center;
     background-color: #eff3f6;
+    border-bottom: none;
+    margin: 0;
   }
   .wrapper main header h3 {
     font-weight: 400;
@@ -272,6 +274,74 @@ Small devices (landscape phones, 576px and up) */
     width: calc(100% - 16px);
     padding: 8px;
     border-radius: 20px;
+  }
+  .wrapper main .events-wrapper {
+    margin-top: 1.2rem;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1;
+        grid-template-columns: 1;
+    -ms-grid-rows: 1;
+        grid-template-rows: 1;
+  }
+  .wrapper main .events-wrapper header {
+    background-color: #fff;
+    border-radius: 10px 10px 0 0;
+    border: 1px solid #e6eaee;
+  }
+  .wrapper main .events-wrapper header h3 > span {
+    font-size: .85rem;
+    color: #a1acbb;
+  }
+  .wrapper main .events-wrapper .events-content {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 4;
+        grid-template-columns: 4;
+    -ms-grid-rows: 2;
+        grid-template-rows: 2;
+    height: 2rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #f6f8fa;
+    border: none;
+    border-left: 1px solid #e6eaee;
+    border-right: 1px solid #e6eaee;
+  }
+  .wrapper main .events-wrapper .events-common {
+    color: #7f8fa4;
+    font-size: .85rem;
+    font-weight: 600;
+    padding-left: 1rem;
+  }
+  .wrapper main .events-wrapper .events-title {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-row: 1;
+    grid-row: 1/1;
+  }
+  .wrapper main .events-wrapper .events-date {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    -ms-grid-row: 1;
+    grid-row: 1/1;
+  }
+  .wrapper main .events-wrapper .events-price {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+    grid-column: 3/4;
+    -ms-grid-row: 1;
+    grid-row: 1/1;
+  }
+  .wrapper main .events-wrapper .events-action {
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 1;
+    grid-column: 4/5;
+    -ms-grid-row: 1;
+    grid-row: 1/1;
   }
 }
 
