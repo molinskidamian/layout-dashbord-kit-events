@@ -315,33 +315,52 @@ Small devices (landscape phones, 576px and up) */
     font-weight: 600;
     padding-left: 1rem;
   }
-  .wrapper main .events-wrapper .events-title {
+  .wrapper main .events-wrapper .events-name__title {
     -ms-grid-column: 1;
     -ms-grid-column-span: 1;
     grid-column: 1/2;
     -ms-grid-row: 1;
     grid-row: 1/1;
   }
-  .wrapper main .events-wrapper .events-date {
+  .wrapper main .events-wrapper .events-date__title {
     -ms-grid-column: 2;
     -ms-grid-column-span: 1;
     grid-column: 2/3;
     -ms-grid-row: 1;
     grid-row: 1/1;
   }
-  .wrapper main .events-wrapper .events-price {
+  .wrapper main .events-wrapper .events-price__title {
     -ms-grid-column: 3;
     -ms-grid-column-span: 1;
     grid-column: 3/4;
     -ms-grid-row: 1;
     grid-row: 1/1;
   }
-  .wrapper main .events-wrapper .events-action {
+  .wrapper main .events-wrapper .events-action__title {
     -ms-grid-column: 4;
     -ms-grid-column-span: 1;
     grid-column: 4/5;
     -ms-grid-row: 1;
     grid-row: 1/1;
+  }
+  .wrapper main .events-wrapper .events-content__row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    outline: 1px solid red;
+    width: 100%;
+    background-color: #fff;
+  }
+  .wrapper main .events-wrapper .events-content__row .common-row {
+    background-color: #fff;
+  }
+  .wrapper main .events-wrapper .events-content__row .event-name {
+    font-size: .8rem;
+    font-weight: 600;
+    padding-left: 1rem;
+  }
+  .wrapper main .events-wrapper .events-content__row .event-name > span {
+    font-weight: normal;
   }
 }
 
